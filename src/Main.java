@@ -4,23 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CheremshaDirector director = new CheremshaDirector();
+        CheremshaFactory spicyFactory = new SpicyCheremshaFactory();
+        CheremshaFactory sweetFactory = new SweetCheremshaFactory();
 
-        Cheremsha spicyCheremsha = director.buildSpicyCheremsha();
-        Cheremsha firmCheremsha = director.buildFirmenayaCheremsha();
-        Cheremsha cheapCheremsha = director.buildCheapCheremsha();
+        Cheremsha spicyCheremsha = spicyFactory.createCheremsha();
+        Cheremsha sweetCheremsha = sweetFactory.createCheremsha();
 
-        System.out.println("Spicy Cheremsha:");
-        System.out.println(spicyCheremsha);
-
-        System.out.println();
-
-        System.out.println("Firmenaya Cheremsha:");
-        System.out.println(firmCheremsha);
+        System.out.println(spicyCheremsha.getName());
+        spicyCheremsha.prepare();
 
         System.out.println();
 
-        System.out.println("Deshevaya Cheremsha:");
-        System.out.println(cheapCheremsha);
+        System.out.println(sweetCheremsha.getName());
+        sweetCheremsha.prepare();
     }
 }
