@@ -1,8 +1,8 @@
-# SDP-asik1 | Factory Method & Abstract Factory
+# SDP-asik2 | Factory Method & Abstract Factory
 
 ## 1. Project
 
-**SDP-asik1 | Cheremsha Factory**
+**SDP-asik2 | Cheremsha Factory**
 
 This project demonstrates two creational design patterns:
 
